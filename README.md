@@ -40,3 +40,61 @@ The project directory in the project virtual environment is similar to the direc
 
 ![image](https://github.com/user-attachments/assets/efc98963-a684-46a7-bb3b-9f31411f908d)
 
+The ‘Postgres_based_ETL’ file in the directory above is created inside the project’s virtual environment. The project’s Github repository is cloned and extracted inside ‘Postgres_based_ETL’ file. 
+
+The project’s repository files and other included documents (such as ETL test data ‘DEM_Challenge_Section1_DATASET.csv’, some crudely designed logo for the frontend, the .streamlit file which includes Streamlit’s ‘secrets.toml’ file for rendering the Stremlit’s front end are also included in the ‘Postgres_based_ETL’ file. Example of the content of ‘Postgres_based_ETL’ file is shown below:
+
+![image](https://github.com/user-attachments/assets/8303883d-3393-4ab7-b571-48b30310cd3d)
+
+4.	Install additional python requirements by using ‘pip install -r requirements.txt’
+
+5.	Use the command ‘docker-compose up -d’ to compile the entire project inside the Docker container. 
+
+
+6.	From your VSCode terminal, run the ‘database_etl.py’ script using the command:
+                                                    ‘streamlit run database_etl.py’
+
+Examples of how to configure your PostgreSQL password, ports and server are given in the ‘database_etl.py’, ‘docker-compose.yml’ and the ‘secrets.toml’ files.
+Before running your project using ‘streamlit run database_etl.py’, configure your tables and databases through the pgAdmin UI in PostgreSQL as shown in the series of figures below. For a hypothetical table named ‘etl_database_1’, create the table in your PostreSQL database as shown below:
+
+
+![image](https://github.com/user-attachments/assets/8157198c-93fe-495b-9a05-ac4d71de61e4)
+
+
+![image](https://github.com/user-attachments/assets/6bd33fe3-d2ad-41b2-b6fa-0ea34e7a37ca)
+
+7.	After setting up a named database in your PostgreSQL database, you can now run your script via your VSCode terminal ( ‘streamlit run database_etl.py’) to complete the ETL automation process. 
+8.	After your project run successfully, you can view your transformed and loaded data in your PostgreSQL database by using the SELECT * FROM databasefilename command as shown in the figures below. In the figures below, the database filename is ‘etl_database_1’. 
+
+![image](https://github.com/user-attachments/assets/2634883e-245d-45d1-9680-5a2708e18708)
+
+
+The original file that was used to provide the example shown above is ‘DEM_Challenge_Section1_DATASET.csv’ file. It is also included in the project file. A cross section of the original data is shown below:
+
+![image](https://github.com/user-attachments/assets/66ed97a3-ac47-44eb-8562-62943facad34)
+
+
+After transformation and loading in the database, users may readily observe that the data has been transformed as specified in the ‘database_etl.py’’ script. As shown in the pgAdmin UI, the last_name column has been sorted alphabetically. Also, a new column (‘full_name’), which is a combination of ‘first_name’ and ‘last_name’ has been added to the original file. 
+
+![image](https://github.com/user-attachments/assets/5ef81832-686c-497b-8759-5a451bfd12ac)
+
+Streamlit is also used to provide an automatically rendered front end for the project. The transformed data can be downloaded as a .csv file using either the Streamlit front end or the pgAdmin UI. The transformed data can be enlarged (zoomed in/out) as shown in the Streamlit front end below:
+
+![image](https://github.com/user-attachments/assets/86223fea-cc8d-4d20-99e6-102e5cfff604)
+
+![image](https://github.com/user-attachments/assets/dd9c38c7-3398-4765-9732-e17b3ff02bc9)
+
+![image](https://github.com/user-attachments/assets/4fb4afb1-52f9-47ac-9647-04474048c702)
+
+As shown in the Streamlit rendering, the crudely designed logo (‘somelogo.png’) also available in the project repository is also rendered as specified by the Streamlit front end.  
+
+
+
+
+
+
+
+
+
+
+
