@@ -37,3 +37,6 @@ If you decide to use a virtual environment for your project, ensure that you act
 3.	Start Docker Desktop on your desktop.
 
 The project directory in the project virtual environment is similar to the directory shown below:
+
+![image](https://github.com/user-attachments/assets/efc98963-a684-46a7-bb3b-9f31411f908d)
+
