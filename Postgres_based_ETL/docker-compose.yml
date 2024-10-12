@@ -1,0 +1,22 @@
+
+services:
+  postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      
+    ports:
+      - 5432:5432
+    networks:
+      - etl_network
+
+
+volumes:
+  postgres_data:
+
+networks:
+  etl_network:
