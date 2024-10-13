@@ -8,7 +8,7 @@ For reproducibility, Docker is used for containerization, along with PostgreSQL 
 -	Transformation: Some aesthetic transformation such as sorting the ‘last_name’ column alphabetically is accomplished. Also executed is a structural transformation process such as combining ‘first_name’ and ‘last_name’ column into a newly created ‘full_name’ column. 
 -	Loading: Loading is also automatically accomplished through the ‘database_etl.py’ file. By using the PostgreSQLs pgAdmin UI (with the user’s password), users can view the transformed and data loaded onto the PostgreSQL database. Users can also immediately view the result of the loaded data through the automatically displayed Streamlit browser front end. 
 ### LIBRARIES & TECHNOLOGIES USED
--	Docker: Containerization technology for managing and deploying the entire project
+-	Docker: Containerization technology for managing and deploying the entire project. It also ensures that the project is reproducible.
 -	Python: For ETL process, frontend system design and for loading the transformed data into the database system. Needed python libraries include sqlalchemy, pandas, streamlit, psycopg2-binary, streamlit_extras.
 -	PostgreSQL: Database for warehousing the transformed data. 
 -	Visual Studio Code: Integrated Development Environment (IDE) for developing, debugging, running and testing the project. 
@@ -22,7 +22,7 @@ The list of needed software and dependencies include:
 -	PostgreSQL database system (versions 16.4 and 17.0 available here:   https://www.enterprisedb.com/downloads/postgres-postgresql-downloads    have been fully tested for this project)
 -	
 ### HOW TO SET UP YOUR PROJECT
-1.	Create a virtual environment on your project directory. Use ‘python -m venv filename’ command.
+1.	Create a virtual environment on your project directory. Use ‘python -m venv filename’ command. Virtual environments are great from project reproducibility.
 
 To activate, use ‘filename\Scrirpts\activate’ command. For some Windows system, to activate, it is preferrable to use ‘.\\Scripts\activate’ command. 
 
