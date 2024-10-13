@@ -22,7 +22,7 @@ The list of needed software and dependencies include:
 -	PostgreSQL database system (versions 16.4 and 17.0 available here:   https://www.enterprisedb.com/downloads/postgres-postgresql-downloads    have been fully tested for this project)
 -	
 ### HOW TO SET UP YOUR PROJECT
-1.	Create a virtual environment on your project directory. Use ‘python -m venv filename’ command. Virtual environments are great from project reproducibility.
+1.	Create a virtual environment on your project directory. Use ‘python -m venv filename’ command. Virtual environments are useful for ensuring project reproducibility and for protecting the system base OS.
 
 To activate, use ‘filename\Scrirpts\activate’ command. For some Windows system, to activate, it is preferrable to use ‘.\\Scripts\activate’ command. 
 
