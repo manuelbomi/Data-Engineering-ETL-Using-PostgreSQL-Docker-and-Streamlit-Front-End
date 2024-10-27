@@ -80,6 +80,9 @@ After transformation and loading in the database, users may readily observe that
 
 Streamlit is also used to provide an automatically rendered front end for the project. The transformed data can be downloaded as a .csv file using either the Streamlit front end or the pgAdmin UI. The transformed data can be enlarged (zoomed in/out) as shown in the Streamlit front end below:
 
+![image](https://github.com/user-attachments/assets/8efdeb46-e666-4511-b093-68dadffd2a8b)
+
+
 ![image](https://github.com/user-attachments/assets/86223fea-cc8d-4d20-99e6-102e5cfff604)
 
 ![image](https://github.com/user-attachments/assets/dd9c38c7-3398-4765-9732-e17b3ff02bc9)
